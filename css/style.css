@@ -1,0 +1,782 @@
+/********** index.html start **********/
+/***** the scrolling box scrolls in a smooth fashion *****/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/***** primary font *****/
+
+body{
+    font-family: "Metropolis", sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+button:focus{
+    outline: none;
+}
+
+/***** header - start *****/
+/***** header : background *****/
+
+.header{
+    height: 100vh;
+    background: linear-gradient(
+        #fd746cf2 20%,
+        #fd8a68f2 80%
+        ), url("../images/backgroundHeader.png");
+    background-size: cover;
+}
+
+/***** header : navbar *****/
+
+.headerNavbar{
+    display: flex;
+}
+
+/***** header : brand name *****/
+
+.headerNavbar_brandingBrand{
+    padding: 6.113vh 37.667vw 0 12vw;
+    font-family: "MetropolisBlack";
+    font-size: 1.95em;
+    color: #fff;
+    animation-duration: 3s;
+    animation-name: slideInUp;
+}
+
+@keyframes slideInUp {
+    from {
+      margin-left: -60%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+}
+
+.headerNavbar_brandingBrand__short{
+    padding: 6.113vh 37.667vw 0 12vw;
+    font-family: "MetropolisBlack";
+    font-size: 1.95em;
+}
+
+/***** header : menu *****/
+
+.headerNavbar_menu{
+    width: 31.499vw;
+    padding-right: 12vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerNavbar_menuItem{
+    width: 5.73vw;
+    padding-top: 6.6vh;
+    text-align: center;
+}
+
+.headerNavbar_menuItem__link{
+    vertical-align: top;
+    font-size: 0.9em;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+}
+
+.headerNavbar_menuItem__link:hover{
+    color: #fcede7;
+}
+
+.headerNavbar_menuItem__linkActive{
+    margin-bottom: 0.4vh;
+    vertical-align: top;
+    font-size: 0.9em;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    color: #65d5e5;
+    cursor: default;
+}
+
+/***** header : title *****/
+
+.headerTitle{
+    margin-top: 14%;
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.headerTitle_strong{
+    font-family: "MetropolisBlack", sans-serif;
+}
+
+.headertTitle_strongColored{
+    color: #65d5e5;
+}
+
+/***** header : button *****/
+
+.headerTitle_button{
+    display: inline-block;
+    margin: 1.1em 0 0 50%;
+    transform: translate(-50%);
+    padding: 0.9% 1.4vw;
+    border: transparent;
+    border-radius: 40px;
+    box-shadow: 0 12px 28px 0 rgba(0,0,0,0.25);
+    background-color: #fff;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #ff8a68;
+}
+
+.headerTitle_button:hover{
+    cursor: default;
+}
+
+/***** header : scroll down button *****/
+
+.headerArrow{
+    text-align: center;
+}
+
+.headerArrow_nextSection{
+    margin-top: 15.5%;
+    color:#fff;
+}
+
+/***** header - end *****/
+/***** about me - start *****/
+
+/***** about me : background *****/
+
+.aboutMe_profile{
+    height: 66.65vh;
+    text-align: center;
+}
+
+/***** aboutme : title *****/
+
+.aboutMe_profileTitle{
+    padding: 9.49% 0 0.3% 0;
+    font-family: "MetropolisBlack", sans-serif;
+    font-size: 3em;
+}
+
+/***** aboutme : subtitle *****/
+
+.aboutMe_profileSubtitle{
+    padding-bottom: 2%;
+    font-family: "Waiting for the Sunrise", cursive;
+    font-size: 2em;
+    font-weight: bold;
+    color: #65d5e5;
+}
+
+/***** aboutme : notice *****/
+
+.aboutMe_profileNotice{
+    width: 33.5%;
+    margin: 0 auto;
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+/***** aboutme : skills *****/
+
+.aboutMe_skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 33.35vh;
+    background-color: #fd8a68;
+}
+
+/***** aboutme : skills list *****/
+
+.aboutMe_skillsList{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 24px;
+}
+
+/***** aboutme : skills *****/
+
+.aboutMe_skillsList__skill{
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+    color: #fff;
+}
+
+/***** aboutme : skills | symbols *****/
+
+.aboutMe_skillsList__skillSymbol{
+    width: 32px;
+}
+
+.aboutMe_skillsList__skillSymbGlasses{
+    transform: rotate(-25deg);
+}
+
+/***** aboutme : skills | items *****/
+
+.aboutMe_skillsList__skillItem{
+    margin-left: 1vw;
+    letter-spacing: 0.05em;
+}
+
+/***** about me - end *****/
+/***** creations - start *****/
+
+/***** creations : background *****/
+
+.creations{
+    padding-bottom: 7.5%;
+    text-align: center;
+}
+
+/***** creations : title *****/
+
+.creationsTitle{
+    padding: 9.49% 0 0.3% 0;
+    font-family: "MetropolisBlack", sans-serif;
+    font-size: 3em;
+}
+
+/***** creations : subtitle *****/
+
+.creationsSubtitle{
+    padding-bottom: 2%;
+    font-family: "Waiting for the Sunrise", cursive;
+    font-size: 2em;
+    font-weight: bold;
+    color: #65d5e5; 
+}
+
+/***** creations : notice *****/
+
+.creationsNotice{
+    width: 33.5%;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+/***** creations : thumbnail *****/
+
+.creationsThumbnail{
+    width: 85%;
+    height: 175vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/***** creations : thumbnail | columns *****/
+
+.creationsThumbnail_column1,
+.creationsThumbnail_column2,
+.creationsThumbnail_column3{
+    width: calc((100% / 3) - 1vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/***** creations : thumbnail | small pictures *****/
+
+.creationsThumbnail_column1Image__min,
+.creationsThumbnail_column2Image__min,
+.creationsThumbnail_column3Image__min{
+    height: 41.5vh;
+    background-color: #ccc2a6;
+}
+
+/***** creations : thumbnail | big pictures *****/
+
+.creationsThumbnail_column1Image__big,
+.creationsThumbnail_column2Image__big,
+.creationsThumbnail_column3Image__big{
+    height: 86vh;
+    background-color: #ccc2a6;
+}
+
+/***** creations - end *****/
+/***** footer - start *****/
+
+/***** footer : back to top button *****/
+
+#backToTop{
+    position: fixed;
+    bottom: 18vh;
+    right: 1vw;
+    background-color: #f86d47;
+    color: #fff;
+    padding: 1.652vh 1vw;
+    display: none;
+    font-size: 20px;
+}
+
+#backToTop:focus,
+#backToTop:hover{
+    opacity: 0.8;
+}
+
+/***** footer : background *****/
+
+.footer{
+    height: 20vh;
+    background-color: #131e25;
+    text-align: left;
+}
+
+/***** footer : links *****/
+
+.footerLinks{
+    margin: 0 7.5%;
+    padding-top: 7.91vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerLinks_itemsNetwork,
+.footerLinks_itemsCv{
+    margin-right: 1vw;
+    color: #fff;
+}
+
+.footerLinks_itemsCv{
+    display: inline-block;
+    font-family: "MetropolisBlack", sans-serif;
+    font-size: 0.9em;
+    color: #65d5e5;
+}
+
+.footerLinks_itemsCv:hover{
+    color: #65d5e5;
+    text-decoration: none;
+}
+
+.footerLinks_button{
+    height: 32px;
+    padding: 1.675vh 1.4vw;
+    border: transparent;
+    border-radius: 40px;
+    box-shadow: 0 6px 28px 0 #ffffff40;
+    background-color: #fff;
+    font-size: 0.95em;
+    font-weight: bold;
+    color: #ff8a68;
+}
+
+.footerLinks_button:hover{
+    background-color: #ff8a68;
+}
+
+.footerCopyright{
+    margin: 4vh 0 0 7.5%;
+    font-size: 0.7em;
+    color: #fff;
+}
+
+/***** footer - end *****/
+/********** index.html end **********/
+
+/********** portfolio.html start **********/
+
+.header_short{
+    height: 16.797vh;
+}
+
+.mainGrid{
+    text-align: center;
+}
+
+.mainGrid_container{
+    padding: 14.1vh 7.5% 7.5% 7.5%;
+}
+
+.mainGrid_caseLight,
+.mainGrid_caseDark,
+.mainGrid_caseBlack{
+    width: calc(100% / 3);
+    height: 53.265vh;
+    padding: 0;
+}
+
+.mainGrid_caseLight{
+    background-color: #f5f5dc;
+}
+
+.mainGrid_caseLight__image{
+    height: 100%;
+    object-fit: none;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.mainGrid_caseLight__image:hover{
+    opacity: 0.5;
+}
+
+.mainGrid_caseDark{
+    background-color: #ccc2a6;
+}
+
+.mainGrid_caseBlack{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainGrid_caseBlack__title{
+    font-size: 1.8em;
+    letter-spacing: -0.07em;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.mainGrid_caseBlack__titleCenterWord{
+    font-family: "MetropolisBlack", sans-serif;
+    color: #65d5e5;
+}
+
+.mainGrid_caseBlack__titleLastWord{
+    letter-spacing: 0.03em;
+}
+
+/********** portfolio.html end **********/
+
+/********** carousel.html start **********/
+
+.diaporama{
+    height: 100vh;
+    position: relative;
+}
+
+.diaporamaAnchor_top{
+    position: absolute;
+    top: 2vh;
+    left: 1%;
+    z-index: 999;
+}
+
+.portfolioBack{
+    position: absolute;
+    top: 20vh;
+    left: 10%;
+    z-index: 999;
+}
+
+.diaporamaAnchor_bottom{
+    position: absolute;
+    bottom: 2vh;
+    left: 1%;
+    z-index: 999;
+}
+
+.diaporamaCaption{
+    margin-left: 25%;
+    background-color: #000;
+    opacity: 0.9;
+    width: 50%;
+    height: 11.5vh;
+    /* position: ; */
+    bottom: 40vh;
+    left: 0;
+    box-shadow: 0px 0px 6px 15px #000;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.carousel-indicators li {
+    width: 100px;
+    margin: 0 1% 5vh 1%;
+    background-color: rgba(169, 169, 169, 100);
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fd8a68;
+ } 
+
+/********** diaporama.html end **********/
+
+/********** contact.html start **********/
+
+.contactData,
+.contactForm{
+    text-align: center;
+}
+
+.contactForm{
+    margin-bottom: 7.5%;
+}
+
+.contactData_title,
+.contactForm_title{
+    padding: 9.49% 0 0.3% 0;
+    font-family: "MetropolisBlack", sans-serif;
+    font-size: 3em;
+}
+
+.contactForm_title{
+    padding-bottom: 2%;
+}
+
+.contactData_subtitle{
+    padding-bottom: 2%;
+    font-family: "Waiting for the Sunrise", cursive;
+    font-size: 2em;
+    font-weight: bold;
+    color: #65d5e5;
+}
+
+.carousel_leftControl:hover,
+.carousel_rightControl:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.contactData_notice,
+.contactForm_notice{
+    width: 33.5%;
+    margin: 0 auto;
+    padding-bottom: 9.49%;
+    font-size: 1.4em;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+.contactData_container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 33.35vh;
+    background-color: #fcede7;
+}
+
+.contactData_containerSkills{
+    height: 50%;
+}
+
+.contactData_containerSkills__symbol{
+    width: 48px;
+    color: #65d5e5;
+}
+
+.contactData_containerSkills_data{
+    padding-top: 1.3vh;
+    font-weight: bold;
+    color: #7a7d83;
+    line-height: 1.4em;
+}
+
+/***** form - start *****/
+
+.contactForm_container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 6vh 0;
+    background-color: #fcede7;
+}
+
+.contactForm_containerFields{
+    display: flex;
+    flex-wrap: wrap;
+    width: 58.69%;
+    margin: 0 auto;
+}
+
+.contactForm_containerFields__required{
+    margin-bottom: 6vh;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #000;
+}
+
+.contactForm_containerFields__nameEmail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactForm_containerFields__name,
+.contactForm_containerFields__email{
+    width: 48.8%;
+    margin-bottom: 3vh;
+}
+
+.contactForm_containerFields__name{
+    text-align: left;
+}
+
+.contactForm_containerFields__nameLabel{
+    margin-bottom: 1vh;
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.contactForm_containerFields__email{
+    text-align: right;
+}
+
+.contactForm_containerFields__emailLabel{
+    margin-bottom: 1vh;
+    width: 100%;
+    padding-left: 4%;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.contactForm_containerFields__nameField,
+.contactForm_containerFields__emailField{
+    width: 96.5%;
+    height: 6vh;
+    border: 0;
+    padding: 0;
+    padding-left: 4%;
+    outline-color: #ff8a68;
+}
+
+.contactForm_containerFields__nameField:hover,
+.contactForm_containerFields__nameField:focus,
+.contactForm_containerFields__emailField:hover,
+.contactForm_containerFields__emailField:focus,
+.contactForm_containerFields__subjectField:hover,
+.contactForm_containerFields__subjectField:focus,
+.contactForm_containerFields__Message:hover,
+.contactForm_containerFields__Message:focus{
+    background-color: #ffffe8;
+}
+
+
+.contactForm_containerFields__subject{
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.contactForm_containerFields__subjectLabel{
+    margin-bottom: 1vh;
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.contactForm_containerFields__subjectField{
+    width: 100%;
+    height: 6vh;
+    border: 0;
+    padding-left: 2%;
+    outline-color: #ff8a68;
+}
+
+.contactForm_containerFields__messageLabel{
+    margin-bottom: 1vh;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.contactForm_containerFields__Message{
+    width: 100%;
+    margin-bottom: 3vh;
+    border: 0;
+    padding: 1.874vh 0 0 2%;
+    resize: none;
+    outline-color: #ff8a68;
+}
+
+.contactForm_containterFields__submit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Cachons la case à cocher */
+.contactForm_containerFields_submit__msgCopyCbox:not(:checked),
+.contactForm_containerFields_submit__msgCopyCbox:checked{
+    position: absolute;
+    left: -9999px;
+}
+
+/* on prépare le label */
+.contactForm_containerFields_submit__msgCopyCbox:not(:checked) + label,
+.contactForm_containerFields_submit__msgCopyCbox:checked + label{
+    position: relative;
+    padding: 0.29vh 0 0 1.75vw;
+    cursor: pointer;
+}
+
+/* Aspect des checkboxes */
+/* :before sert à créer la case à cocher */
+.contactForm_containerFields_submit__msgCopyCbox:not(:checked) + label:before,
+.contactForm_containerFields_submit__msgCopyCbox:checked + label:before{
+    content: '';
+    position: absolute;
+    left:0; top: 0;
+    width: 1.181vw; height: 2.22vh; /* dim. de la case */
+    background-color: #fff;
+}
+
+/* Aspect général de la coche */
+.contactForm_containerFields_submit__msgCopyCbox:not(:checked) + label:after,
+.contactForm_containerFields_submit__msgCopyCbox:checked + label:after{
+    content: '✔';
+    position: absolute;
+    top: 0.42vh; left: 0.22vw;
+    font-size: 0.95em;
+    color: #65d5e5;
+    transition: all .2s; /* on prévoit une animation */
+}
+
+/* Aspect si "pas cochée" */
+.contactForm_containerFields_submit__msgCopyCbox:not(:checked) + label:after{
+    opacity: 0; /* coche invisible */
+    transform: scale(0); /* mise à l'échelle à 0 */
+}
+
+/* Aspect si "cochée" */
+.contactForm_containerFields_submit__msgCopyCbox:checked + label:after{
+    opacity: 1; /* coche opaque */
+    transform: scale(1); /* mise à l'échelle 1:1 */
+}
+
+/* aspect au survol de l'élément */
+.contactForm_containerFields_submit__msgCopyCbox:checked:hover + label:before,
+.contactForm_containerFields_submit__msgCopyCbox:hover + label:before{
+    background-color: #ffffe8;
+}
+
+.contactForm_containerFields_submit__msgCopyLabel{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.contactForm_containerFields_submitButton{
+    height: 6vh;
+    padding: 1rem 1.5rem;
+    border: 0;
+    background-color: #979695;
+    font-weight: bold;
+    color: #fff;
+}
+
+/***** form - end *****/
+/********** contact.html start **********/

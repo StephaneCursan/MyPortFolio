@@ -1,0 +1,484 @@
+/*** PROJET FINAL ***/
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+/**** index.html start ****/
+
+.section_one_bg, .section_one_sm{
+	background-color: #9b6f94;
+	width: 100%;
+}
+
+.section_one_bg{
+	height: 100vh;
+}
+
+header{
+	width: 100%;
+	height: 14.5vh;
+	display: flex;
+}
+
+.logo img{
+	position: absolute;
+	width: 5.6vw;
+	top: 5vh;
+	left: 9vw;
+}
+
+.main_menu{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 9vw;
+}
+
+.menu{
+	display: flex;
+	width: 18vw;
+	font-family: "OpenSans-Light";
+	font-weight: bold;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu li, .menu a{
+	font-size: 0.9em;
+	letter-spacing: -0.03em;
+	color: #fff;
+	text-decoration: none;
+}
+
+.presents{
+	width: 100%;
+	height: 19.7vh;
+	margin-top: 28.3vh;
+	text-align: center;
+	color: #fff;
+}
+
+.presents h3{
+	font-family: "OpenSans-Light";
+	font-size: 0.9em;
+	letter-spacing: 0.15em;
+	margin-bottom: 2.6vh;
+}
+
+.presents h1{
+	font-family: "OpenSans-Bold";
+	font-size: 2.9em;
+	margin-bottom: 1.3vh;
+}
+
+.presents h2{
+	font-family: "SnellRoundhand";
+	font-size: 3.4em;
+}
+
+.presents img{
+	width: 6.5vh;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#section_two{
+	background-color: #f9ffb2;
+	width: 100%;
+	height: 50vh;
+	text-align: center;
+	font-family: "OpenSans-Light";
+}
+
+#section_two h2{
+	font-size: 2.3em;
+	font-weight: bold;
+	color: #000;
+	padding: 10.6vh 0 4vh 0;
+}
+
+#section_two p{
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.firm{
+	width: 100%;
+	height: 11.8vh;
+}
+
+.firm img{
+	height: 100%;
+}
+
+.section_three{
+	background-color: #f96868;
+	width: 100%;
+	height: 25vh;
+	display: flex;
+	justify-content: center;
+}
+
+.section_three ul{
+	width: 85%;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	font-family: "OpenSans-Light";
+}
+
+.section_three li{
+	font-size: 0.9em;
+	letter-spacing: -0.03em;
+	color: #fff;
+	padding: 1.4vh 0 0 0.7vw;
+}
+
+.tags{
+	display: flex;
+}
+
+.section_projects{
+	background-color: #f9ffb2;
+	font-family: "OpenSans-Light";
+	color: #000;
+}
+
+.section_projects h2{
+	font-size: 2.3em;
+	font-weight: bold;
+	text-align: center;
+	padding: 9.1vh 0 4vh 0;
+}
+
+.section_projects p{
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 6.5vh;
+}
+
+.thumbnail{								/* thumbnail portfolio... */
+	width: 100%;
+	height: 175vh;
+	background-color: #f9ffb2;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30.5vh;
+}
+
+.column{
+	width: calc(85% / 3);
+	height: 175vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.col_1, .col_2{
+	padding-right: 1.4vw;
+}
+
+.mini_img, .bg_img{
+	width: 100%;
+	background-color: #ededed;
+}
+
+.mini_img{
+	height: 41.5vh;
+}
+
+.big_img{
+	height: 86vh;
+}
+
+.case_1, .case_2, .case_3, .case_4, .case_5, .case_6, .case_7, .case_8, .case_9{
+	position: relative;
+}
+
+.case_1, .case_2, .case_4, .case_5, .case_7, .case_8{
+	margin-bottom: 3vh;
+}
+
+.case_1 img, .case_2 img, .case_3 img, .case_4 img, .case_5 img, .case_6 img, .case_7 img, .case_8 img, .case_9 img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.case_1 h4, .case_2 h4, .case_3 h4, .case_4 h4, .case_5 h4, .case_6 h4, .case_7 h4, .case_8 h4, .case_9 h4{
+	width: calc(100% - 1vw);
+	background-color: rgba(255,0,0,0.25);
+	position: absolute;
+	bottom: 4vh;
+	opacity: 0;
+	font-family: "OpenSans-Bold";
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: -0.03em;
+	color: #fff;
+	padding: 1.4vh 0 1.4vh 1vw;
+}
+
+.case_1:hover img, .case_2:hover img, .case_3:hover img, .case_4:hover img, .case_5:hover img, .case_6:hover img, .case_7:hover img, .case_8:hover img, .case_9:hover img{
+	filter: brightness(0.4);
+}
+
+.case_1:hover h4, .case_2:hover h4, .case_3:hover h4, .case_4:hover h4, .case_5:hover h4, .case_6:hover h4, .case_7:hover h4, .case_8:hover h4, .case_9:hover h4{
+	opacity: 1;
+}
+
+h4:hover{
+	cursor: default;
+}										/* ...thumbnail portfolio */
+
+.footer{
+	background-color: #9b6f94;
+	width: 100%;
+	height: 50vh;
+	font-family: "SnellRoundhand";
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+
+.footer h2{
+	font-size: 3.4em;
+	font-weight: normal;
+	padding: 14.4vh 0 1.9vh 0;
+}
+
+.footer h3{	
+	font-size: 1.3em;
+	padding-bottom: 9.2vh;
+}
+
+.footer a{
+	font-family: "OpenSans-Light";
+	font-size: 0.9em;
+	color: #fff;
+}
+
+/**** index.html end ****/
+
+/**** portfolio.html start ****/
+
+.background{
+	background-color: #9b6f94;
+}
+
+.section_portfolio{
+	width: 100%;
+	height: 185vh;
+	background:#f9ffb2;
+}
+
+.portfolio_img img:hover{
+	filter: brightness(0.4);
+}
+
+.col-md{
+	height: 53.5vh;
+}
+
+.col-md img{
+	height: 100%;
+	object-fit: cover;
+}
+
+.pos_img_2, .pos_img_6{
+	object-position: top left;
+}
+
+.footer_portfolio, .footer_singlework{
+	background-color: #f96868;
+	width: 100%;
+	height: 20vh;
+	text-align: center;
+}
+
+.footer_portfolio{
+	margin-top: 12vh;
+}
+
+.footer_singlework{
+	margin-top: 0;
+}
+
+.footer_portfolio p, .footer_singlework p{
+	display: inline-block;
+	width: 2vh;
+}
+
+.fab{
+	margin: 6.5vh 0 3vh 0;
+	color:#fff;
+}
+
+.footer_portfolio h6, .footer_singlework h6{
+	font-family: "OpenSans-Light";
+	font-weight: bold;
+	font-size: 0.9em;
+	letter-spacing: -0.03em;
+	color: #fff;
+}
+
+/**** portfolio.html end ****/
+
+/**** single_work.html start ****/
+
+.integration_html-css{
+	width: 100%;
+	height: 50vh;
+	background-color: #f9ffb2;
+}
+
+.integration_html-css h1{
+	padding: 15vh 0 0 7.5%;
+	margin-bottom: 3vh;
+	font-weight: bold;
+	font-family: "OpenSans-Light";
+	font-size: 2.3em;
+}
+
+.notice{
+	width: 85%;
+	height: 30vh;
+	margin-left: 7.5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.notice_text{
+	width: 70%;
+	height: 30vh;
+}
+
+.notice_datas{
+	width: 24%;
+}
+
+.notice_text p, .notice_datas p{
+	font-family: "OpenSans-Light";
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.notice_text p{
+	padding-bottom: 2.5vh;
+}
+
+.notice_datas p{
+	padding-bottom: 1.5vh;
+}
+
+.diaporama img{
+	width: 100%;
+}
+
+.indicators{
+	height: 15vh;
+	width: 100%;
+	display: flex;
+	font-family: "OpenSans-Light";
+}
+
+.indicator_1, .indicator_2{
+	font-size: 0.9em;
+	letter-spacing: -0.03em;
+	font-weight: bold;
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.indicator_1{
+	padding-left: 7.5vw;
+	justify-content: flex-start;
+}
+
+.indicator_2{
+	padding-right: 7.5vw;
+	justify-content: flex-end;
+}
+
+.indicator_1 a, .indicator_2 a{
+	color: #fff;
+}
+
+/**** single_work.html end ****/
+
+/**** contact.html start ****/
+
+.form_contact{
+	width: 100%;
+	height: 100vh;
+	background-color: #f9ffb2;
+	display: flex;
+	padding: 6vh 7.5% 0 7.5%;
+	font-family: "OpenSans-Light";
+}
+
+.form_infos{
+	width: 40%;
+	height: 49vh;
+	margin-top: 19.5vh;
+}
+
+.form_infos h1{
+	margin-bottom: 3vh;
+	font-weight: bold;
+	font-size: 2.3em;
+}
+
+.form_infos p{
+	font-size: 0.9em;
+	line-height: 1.5em;
+	padding-bottom: 0;
+}
+
+.form_datas{
+	margin-top: 19.5vh;
+	width: 60%;
+	height: 49vh;
+	padding-left: 5vw;
+	font-size: 0.9em;
+}
+
+.interline_bg{
+	margin-bottom: 3.5vh;
+}
+
+.interline_sm{
+ 	margin-bottom: 1.5vh;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.input_text_form{
+ 	height: 6vh;
+ 	border: none;
+}
+
+.input_textarea_form{
+ 	height: 20vh;
+ 	border: none;
+}
+
+.button{
+	font-size: 0.9em;
+	background-color: #000;
+	letter-spacing: 0.16em;
+}
+
+.button a{
+	color: #fff;
+	text-decoration: none;
+}
